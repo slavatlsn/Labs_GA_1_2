@@ -1,0 +1,12 @@
+{
+  "lab": 2, "student": {"N": 24, "Q": 1, "Y": 26, "group": "517", "variant": 2},
+  "data": "data/knapsack.json",
+  "seeds": [2000,2001,2002,2003,2004,2005,2006,2007,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019],
+  "common": {"population": 100, "budget": 12000},
+  "configs": {
+    "penalty_bit": {"algorithm": "ga", "elite": 2, "tournament": 3, "crossover_probability": 0.9, "initial_one_probability": 0.2, "constraints": "penalty", "mutation": "bit"},
+    "repair_bit": {"algorithm": "ga", "elite": 2, "tournament": 3, "crossover_probability": 0.9, "initial_one_probability": 0.2, "constraints": "repair", "mutation": "bit"},
+    "penalty_swap": {"algorithm": "ga", "elite": 2, "tournament": 3, "crossover_probability": 0.9, "initial_one_probability": 0.2, "constraints": "penalty", "mutation": "swap"},
+    "random_feasible": {"algorithm": "random"}
+  }
+}
